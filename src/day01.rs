@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 
 fn parse_input(input: &str) -> (Vec<i32>,Vec<i32>){
-    input.split("\n")
+    input.lines()
     .map(|line: &str| {
         let nums: Vec<i32> = line.split_whitespace()
         .filter_map(|str_num| str_num.parse().ok())

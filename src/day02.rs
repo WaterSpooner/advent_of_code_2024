@@ -1,5 +1,5 @@
 fn parse_input(input: &str) -> Vec<Vec<i32>>{
-    input.split("\n")
+    input.lines()
     .map(|line: &str| {
         line.split_whitespace()
         .filter_map(|str_num| str_num.parse().ok())

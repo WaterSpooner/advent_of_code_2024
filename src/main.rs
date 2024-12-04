@@ -16,9 +16,11 @@ macro_rules! run_day {
 run_day!(day01);
 run_day!(day02);
 run_day!(day03);
+run_day!(day04);
 
 fn main() {
     day01();
     day02();
     day03();
+    day04();
 }
